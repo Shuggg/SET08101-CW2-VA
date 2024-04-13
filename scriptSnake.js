@@ -97,10 +97,38 @@ function collision(head, array) {
 }
 var Play = document.getElementById('Play');
 Play.addEventListener('click', handleClick1); 
-
+var 
 function playSoundScore() {
   // Create audio element
   var audio = new Audio('Score.m4a');
   // Play the audio
   audio.play();
 }
+let isMuted = false;
+function toggleMute() {
+    // Toggle the mute state
+    isMuted = !isMuted;
+    
+    // Check if muted or not and update button text accordingly
+    if (isMuted) {
+        // Mute audio
+        audio.volume = 0; // Set volume to 0 to mute
+        muteButton.textContent = 'Unmute';
+    } else {
+        // Unmute audio
+        audio.volume = 1; // Set volume to 1 for full volume
+        muteButton.textContent = 'Mute';
+    }
+}
+
+function handleClick2() { //again
+    alert("Choose a game from the selection below; Click play to launch.");
+}
+var instruc = document.getElementById('instruc');
+instruc.addEventListener('click', handleClick2);
+ 
+function handleClick4() {//again
+   toggleMute()
+}
+var mute = document.getElementById('mute');
+mute.addEventListener('click', handleClick4)
