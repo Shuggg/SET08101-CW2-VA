@@ -21,7 +21,7 @@ let x = 0, y = 0, dirX = 1, dirY = 1;//position and direction
 const speed = 2;
 const colour = ["#ff8800", "#e124ff", "#6a19ff", "#ff2188"];//colour array, could add more but meh
 let va = document.getElementById("va");// grab css element
-va.backgroundColor = colour[0]; //attach colour array to element
+va.style.backgroundColor = colour[0]; //attach colour array to element
 let turn = 0; 
 var black = document.querySelector('.black-box');// grab css element
 const vaWidth = va.clientWidth;
