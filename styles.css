@@ -162,11 +162,13 @@
         bottom: 40px;
   }
   .dvd {
+      font-size: 3em;
+        font-weight: bold;
         position: absolute;
         left: 0px;
         top: 0px;
-        height: 50px;
-        width: 100px;
+        height: 40px;
+        width: 80px;
         mask: img("7GmhV701.png");
         -webkit-mask: img("7GmhV701.png");
         background-repeat: no-repeat;
