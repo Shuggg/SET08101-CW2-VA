@@ -94,6 +94,8 @@
  .page-container{
  }
  .arcade-container{
+  margin: 0 auto;
+   width:1110px;
     display: flex;
     flex-direction: column;
     align-items: center;
