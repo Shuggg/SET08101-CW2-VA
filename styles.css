@@ -1,0 +1,215 @@
+ body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    min-height: 100vh;
+  background-image: url('backgroundVA.avif');
+  <!-- https://images.unsplash.com/photo-1534841090574-cba2d662b62e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.arcade-top {
+        width: 1100px;
+        height: 150px;
+        background-color: #333;
+        border: 10px solid #555;
+        border-radius: 20px;
+        text-align: center;
+}
+.arcade {
+        width: 1050px;
+        height: 700px;
+        background-color: #333;
+        border: 10px solid #555;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+ }
+ .arcade-bottom {
+        width: 1100px;
+        height: 300px;
+        background-color: #333;
+        border: 10px solid #555;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0 auto;
+}
+  
+.black-box {
+        width: 800px;
+        height: 600px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 auto;
+        top: 40px;
+        animation: vhs-noise 0.5s infinite;
+        flex-direction: column;
+}
+.lens-flare {
+        position: absolute;
+        width: 1900px;
+        height: 100px;
+        border-radius: 50%;
+        background: radial-gradient(white, transparent 30%);
+        opacity: 0.5;
+        pointer-events: none;
+        z-index: 3;
+        animation: rotateLensFlare 5s linear infinite;
+        left: -900px;
+        margin: 0 auto;
+ }
+ .lens-flare2 {
+        position: absolute;
+        width: 3500px;
+        height: 3500px;
+        border-radius: 50%;
+        background: radial-gradient(white, transparent 30%);
+        opacity: 0.5;
+        pointer-events: none;
+        z-index: 3;
+        animation: rotateLensFlare 1s linear infinite;
+        left: -1400px;
+        margin: 0 auto;
+ }
+ @keyframes rotateLensFlare {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+ }
+ .content {
+    display: flex;
+    flex-direction: row; /* Align joystick and buttons in a row */
+    justify-content: space-between; /* Distribute space between joystick and buttons */
+ }
+ .page-container{
+ }
+ .arcade-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #17202A;
+    background: #212F3C;
+    border-radius: 30px;
+    Z-index: -2;
+ }
+ .joystick-container {
+ }
+ .button-container {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 20px;
+  padding: 30px;
+      grid-row-gap: 0px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+     margin-left: -30px;
+     left: -30px;
+ }
+ .button-arcade {
+        width: 150px;
+        height: 100px;
+        background-color: #FF0000;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        transition: .1s;
+        font-weight: bold;
+        border: 6px solid black;
+        box-shadow: 0 8px 0 rgb(183,9,0),0 15px 20px rgba(0,0,0,.35);
+ }
+ 
+ .button-arcade:hover {
+  background-color: #cc0000
+ }
+ .button-arcade:active {
+      background-color: #800000;
+      padding-top: 3px;
+      transform: translateY(4px);
+ }
+ .joystick {
+        width: 160px;
+        height: 160px;
+        background-color: #6C3483;
+        border-radius: 50%;
+        position: relative;
+        z-index: +1;
+        right: -190px;
+        top: -20px;
+  border: 6px solid black;
+ }
+ .stick {
+        width: 30px;
+        height: 130px;
+        background-color: #ffc107;
+        position: relative;
+        border-radius: 30px;
+  border: 6px solid black;
+        left: 250px;
+        bottom: 40px;
+  }
+  .dvd {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 50px;
+        width: 100px;
+        mask: img("7GmhV701.png");
+        -webkit-mask: img("7GmhV701.png");
+        background-repeat: no-repeat;
+        background-size: 75px;
+        background-position: center;
+        z-index: 2;
+        <!-- file:///C:/Users/mjoey/Downloads/7GmhV701.svg
+        https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg
+          https://cdn.freebiesupply.com/logos/large/2x/veterans-administration-logo-png-transparent.png
+          -->
+  }
+.header-text {
+        font-size: 5rem;
+        font-weight: bold;
+        color: #FF0000;
+        text-transform: uppercase; 
+        letter-spacing: 0.2em;
+        text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.7); 
+        align-self: flex-start;
+        margin-top: 10px;
+  }
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+.game-entry {
+    background-color: #808080;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.game-entry img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 5px;
+}
+.game-entry name {
+    margin-top: 30px;
+    font-size: 40px;
+  text-align: left;
+}
+.game-entry desc {
+    margin-top: 5px;
+  text-align: left;
+}
+
