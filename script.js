@@ -28,12 +28,12 @@ const vaWidth = va.clientWidth;
 const vaHeight = va.clientHeight;// size
 
 function randomColour() { 
-  const colour = [...colour]//transferring colour array
-  colour.splice(turn,1) //change colour array
+  const colour1 = [...colour]//transferring colour array
+  colour1.splice(turn,1) //change colour array
   const colourIndex = Math.floor(Math.random() * currentPallete.length);// choose number in array
   turn = colourIndex<turn?colourIndex:colourIndex+1;// increment turn
-  const colour1 = colour[colorIndex];
-  return colour1;
+  const colour2 = colour1[colorIndex];
+  return colour2;
 }
 function animate() {
   const screenHeight = black.clientHeight;
