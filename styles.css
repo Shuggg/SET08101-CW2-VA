@@ -33,6 +33,7 @@ body {
         height: 600px;
         background-color: #000;
         position: relative;
+	overflow: hidden;
         border-radius: 10px;
         margin: 0 auto;
         top: 40px;
@@ -44,51 +45,45 @@ body {
         border-radius: 50%;
         background: radial-gradient(white, transparent 30%);
         opacity: 0.5;
-        pointer-events: none;
-        z-index: 3;
         animation: rotateLensFlare 5s linear infinite;
         left: -900px;
-        margin: 0 auto;
  }
- @keyframes rotateLensFlare {
+@keyframes rotateLensFlare {
         from {
             transform: rotate(0deg);
         }
         to {
             transform: rotate(360deg);
         }
- }
- .content {
-    display: flex;
-    flex-direction: row; /* Align joystick and buttons in a row */
-    justify-content: space-between; /* Distribute space between joystick and buttons */
+}
+.content {
+	display: flex;
+	flex-direction: row; /* Align joystick and buttons in a row */
+    	justify-content: space-between; /* Distribute space between joystick and buttons */
  }
  .page-container{
  }
  .arcade-container{
-  margin: 0 auto;
-   width:1110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 10px solid #17202A;
-    background: #212F3C;
-    border-radius: 30px;
-    Z-index: -2;
+	margin: 0 auto;
+   	width:1110px;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	border: 10px solid #17202A;
+    	background: #212F3C;
+    	border-radius: 30px;
  }
  .joystick-container {
  }
  .button-container {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      grid-gap: 20px;
-  padding: 30px;
-      grid-row-gap: 0px;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-     margin-left: -30px;
-     left: -30px;
+	display: grid;
+      	grid-template-columns: auto 1fr auto;
+      	grid-gap: 20px;
+  	padding: 30px;
+      	grid-row-gap: 0px;
+      	justify-content: center;
+      	align-items: center;
+      	position: relative;
  }
  .button-arcade {
         width: 150px;
@@ -118,10 +113,10 @@ body {
         background-color: #6C3483;
         border-radius: 50%;
         position: relative;
-        z-index: +1;
-        right: -190px;
+        z-index: 1;
+        right: -185px;
         top: -20px;
-  border: 6px solid black;
+  	border: 6px solid black;
  }
  .stick {
         width: 30px;
@@ -129,7 +124,7 @@ body {
         background-color: #ffc107;
         position: relative;
         border-radius: 30px;
-  border: 6px solid black;
+  	border: 6px solid black;
         left: 240px;
         bottom: 40px;
   }
@@ -137,20 +132,8 @@ body {
         font-size: 3rem;
         font-weight: bold;
         position: absolute;
-        left: 0px;
-        top: 0px;
         height: 30px;
         width: 60px;
-        mask: img("7GmhV701.png");
-        -webkit-mask: img("7GmhV701.png");
-        background-repeat: no-repeat;
-        background-size: 75px;
-        background-position: center;
-        z-index: 2;
-        <!-- file:///C:/Users/mjoey/Downloads/7GmhV701.svg
-        https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg
-          https://cdn.freebiesupply.com/logos/large/2x/veterans-administration-logo-png-transparent.png
-          -->
   }
 .header-text {
         font-size: 5rem;
@@ -159,33 +142,31 @@ body {
         text-transform: uppercase; 
         letter-spacing: 0.2em;
         text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.7); 
-        align-self: flex-start;
         margin-top: 10px;
   }
 .game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    padding: 20px;
+    	display: grid;
+   	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    	grid-gap: 20px;
+    	padding: 20px;
 }
 .game-entry {
-    background-color: #808080;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    	background-color: #808080;
+    	padding: 20px;
+    	border-radius: 10px;
+    	text-align: center;
+	border: 6px solid black;
 }
 .game-entry img {
-    width: 100%;
-    max-width: 100px;
-    border-radius: 5px;
+    	width: 100%;
+    	max-width: 100px;
+    	border-radius: 5px;
 }
 .game-entry name {
-    margin-top: 30px;
-    font-size: 40px;
-  text-align: left;
+    	font-size: 40px;
+  	text-align: left;
 }
 .game-entry desc {
-    margin-top: 5px;
-  text-align: left;
+  	text-align: left;
 }
 
