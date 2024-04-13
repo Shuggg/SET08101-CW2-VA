@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Arcade</title>
+</head>
+<body>
+    <div class="page-container">
+  <div class="arcade-container">
+    <div class="arcade-top">
+    <h1 class="header-text">Virtual 🕹️  Arcade</h1>
+    </div>
+    <div class="arcade">   
+       <div class="black-box">
+         <div class="lens-flare"></div>
+         <div class="lens-flare2"></div>
+         <div id="dvd" class="dvd"></div>
+       </div>
+    </div>
+    <div class="arcade-bottom">
+      <div class="content">
+        <div class="joystick-container">
+          <div class="joystick"></div>
+          <div class="stick"></div>
+        </div>
+        <div class="button-container">
+          <button class="button-arcade" id="Play">Play</button>
+          <button class="button-arcade" id="instruc">Instructions</button>
+          <button class="button-arcade" href="index.html">Games</button>
+          <button class="button-arcade" id="mute">Mute</button>
+          <button class="button-arcade" href="instruction.hmtl">Information</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="game-grid">
+    <a href="snake.html" class="game-entry">
+        <img src="game1.jfif" alt="Game 1">
+        <name>Snake
+        <desc>Grow your snake by eating food while avoiding collisions with walls or yourself.</desc>
+        </name>
+        </img>
+    </a>
+    <a class="game-entry">
+        <img src="game2.png" alt="Game 2">
+          <name>Breakout</name>
+          <desc>Break and bounce a ball to destroy blocks while preventing it from falling below the paddle.</desc>
+        </img>
+    </a>
+    <a class="game-entry">
+        <img src="game3.jpg" alt="Game 3">
+        <name>Tetris</name>
+        <desc>Tetris is a classic puzzle game where players arrange falling blocks to create complete horizontal lines, aiming to prevent the stack from reaching the top.</desc>
+        </img>
+    </a>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
