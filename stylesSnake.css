@@ -19,6 +19,7 @@ body {
         height: 700px;
         background-color: #333;
         border: 10px solid #555;
+	align-items: center;
  }
  .arcade-bottom {
         width: 1100px;
