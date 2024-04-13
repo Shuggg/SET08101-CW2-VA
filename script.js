@@ -20,44 +20,41 @@ var mute = document.getElementById('mute');
 mute.addEventListener('click', handleClick4);
    
 
-let x = 0,
-  y = 0,
-  dirX = 1,
-  dirY = 1;
+let x = 0, y = 0, dirX = 1, dirY = 1;
 const speed = 2;
-const pallete = ["#ff8800", "#e124ff", "#6a19ff", "#ff2188"];
-let dvd = document.getElementById("dvd");
-dvd.style.backgroundColor = pallete[0];
-let prevColorChoiceIndex = 0;
+const colour = ["#ff8800", "#e124ff", "#6a19ff", "#ff2188"];
+let va = document.getElementById("va");
+va.style.backgroundColor = colour[0];
+let turn = 0;
 var black = document.querySelector('.black-box');
-const dvdWidth = dvd.clientWidth;
-const dvdHeight = dvd.clientHeight;
+const vaWidth = va.clientWidth;
+const vaHeight = va.clientHeight;
 
-function getNewRandomColor() {
-  const currentPallete = [...pallete]
-  currentPallete.splice(prevColorChoiceIndex,1)
-  const colorChoiceIndex = Math.floor(Math.random() * currentPallete.length);
-  prevColorChoiceIndex = colorChoiceIndex<prevColorChoiceIndex?colorChoiceIndex:colorChoiceIndex+1;
-  const colorChoice = currentPallete[colorChoiceIndex];
-  return colorChoice;
+function randomColour() {
+  const colour = [...colour]
+  colour.splice(turn,1)
+  const colourIndex = Math.floor(Math.random() * currentPallete.length);
+  prevColourIndex = colourIndex<prevColourIndex?colourIndex:colourIndex+1;
+  const colour1 = colour[colorIndex];
+  return colour1;
 }
 function animate() {
   const screenHeight = black.clientHeight;
   const screenWidth = black.clientWidth;
 
-  if (y + dvdHeight >= screenHeight || y < 0) {
+  if (y + vaHeight >= screenHeight || y < 0) {
     dirY *= -1;
-    dvd.style.backgroundColor = getNewRandomColor();
+    va.style.backgroundColor = randomColour();
   }
-  if (x + dvdWidth >= screenWidth || x < 0) {
+  if (x + vaWidth >= screenWidth || x < 0) {
     dirX *= -1;
 
-    dvd.style.backgroundColor = getNewRandomColor();
+    dvd.style.backgroundColor = randomColour();
   }
   x += dirX * speed;
   y += dirY * speed;
-  dvd.style.left = x + "px";
-  dvd.style.top = y + "px";
+  va.style.left = x + "px";
+  va.style.top = y + "px";
   window.requestAnimationFrame(animate);
 }
 
