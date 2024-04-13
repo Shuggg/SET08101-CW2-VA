@@ -1,1 +1,47 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Virtual Arcade</title>
+</head>
+<body>
+<div class="page-container">
+  <div class="arcade-container">
+    <div class="arcade-top">
+    <h1 class="header-text">Snake</h1>
+    </div>
+    <div class="arcade">   
+       <div class="black-box">
+          <canvas id="gameCanvas" class="screen" width="570" height="570"></canvas>
+       </div>
+    </div>
+    <div class="arcade-bottom">
+      <div class="content">
+        <div class="joystick-container">
+          <div class="joystick"></div>
+          <div class="stick"></div>
+        </div>
+        <div class="button-container">
+                <button class="button-arcade" id="Play">Play</button>
+                <button class="button-arcade" id="instruc">Instructions</button>
+                <button class="button-arcade" href="index.html">Games</button>
+                <button class="button-arcade" id="mute">Mute</button>
+                <button class="button-arcade" href="instruction.hmtl">Information</button>
+        </div>
+      </div>
+    </div>
+</div>
+	<div class="info-section">
+   		<h2 class="header-text">Snake Game Information</h2>
+    			<p>The Snake game, originating in the 1970s and gaining widespread popularity with Nokia mobile phones in the late 1990s, challenges players to control a growing snake using arrow keys or similar controls. As the snake moves continuously, the player must navigate it around the game area, consuming food to grow longer while avoiding collisions with itself or the walls. With each food item consumed, the score increases, and the game becomes progressively faster, testing players' reflexes and strategic abilities. Despite it's simplicity, the game's addictive nature and minimalist design have made it a timeless classic enjoyed by players across various platforms.</p>
+    		<ul>
+      		<li>Score: Displayed on the canvas during gameplay.</li>
+      		<li>Controls: Use arrow keys to control the snake.</li>
+      		<li>Objective: Eat food to grow the snake and avoid collisions with walls and itself.</li>
+    		</ul>
+  	</div>
+<script src="scriptSnake.js"></script>
+</body>
+</html>
