@@ -12,6 +12,7 @@ instruc.addEventListener('click', handleClick2);
  
 function handleClick4() {//again
    alert("Nothing to mute");
+    toggleMute()
 }
 var mute = document.getElementById('mute');
 mute.addEventListener('click', handleClick4);
@@ -58,3 +59,20 @@ function animate() {
 window.requestAnimationFrame(animate); //start
 // below is the original, cool idea
 //https://codepen.io/RobotWizard/pen/rRVKVa
+
+let isMuted = false;
+function toggleMute() {
+    // Toggle the mute state
+    isMuted = !isMuted;
+    
+    // Check if muted or not and update button text accordingly
+    if (isMuted) {
+        // Mute audio
+        audio.volume = 0; // Set volume to 0 to mute
+        muteButton.textContent = 'Unmute';
+    } else {
+        // Unmute audio
+        audio.volume = 1; // Set volume to 1 for full volume
+        muteButton.textContent = 'Mute';
+    }
+}
