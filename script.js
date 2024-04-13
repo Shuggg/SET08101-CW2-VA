@@ -32,7 +32,7 @@ function randomColour() {
   colour1.splice(turn,1) //change colour array
   const colourIndex = Math.floor(Math.random() * colour1.length);// choose number in array
   turn = colourIndex<turn?colourIndex:colourIndex+1;// increment turn
-  const colour2 = colour1[colorIndex];
+  const colour2 = colour1[colourIndex];
   return colour2;
 }
 function animate() {
