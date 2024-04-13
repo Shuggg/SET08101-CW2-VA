@@ -131,9 +131,10 @@ body {
   .dvd {
         font-size: 3rem;
         font-weight: bold;
+	text-align: top;
         position: absolute;
-        height: 30px;
-        width: 60px;
+        height: 40px;
+        width: 70px;
   }
 .header-text {
         font-size: 5rem;
