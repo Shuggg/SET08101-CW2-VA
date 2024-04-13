@@ -1,0 +1,164 @@
+ body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+  background-image: url('backgroundVA.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.arcade-top {
+        width: 1100px;
+        height: 150px;
+        background-color: #333;
+        border: 10px solid #555;
+        border-radius: 20px;
+        text-align: center;
+}
+.arcade {
+        width: 1050px;
+        height: 700px;
+        background-color: #333;
+        border: 10px solid #555;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+     
+ }
+ .arcade-bottom {
+        width: 1100px;
+        height: 300px;
+        background-color: #333;
+        border: 10px solid #555;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0 auto;
+}
+.black-box {
+        width: 800px;
+        height: 600px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 auto;
+        top: 40px;
+        display: flex;
+	justify-content: center;
+        align-items: center;
+}
+.screen{
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      border: 10px solid #3b3273;
+      border-radius: 10px;
+      position: absolute;
+}
+ .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .page-container{
+ }
+ .arcade-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #17202A;
+    background: #212F3C;
+    border-radius: 30px;
+    Z-index: -3;
+ }
+ .joystick-container {
+ }
+ .button-container {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 20px;
+  padding: 30px;
+      grid-row-gap: 0px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+     margin-left: -30px;
+     left: -30px;
+     z-index: 3;
+ }
+ .button-arcade {
+        width: 150px;
+        height: 100px;
+        background-color: #FF0000;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        transition: .2s;
+        font-weight: bold;
+        border: 6px solid black;
+        box-shadow: 0 8px 0 rgb(183,9,0),0 15px 20px rgba(0,0,0,.35);
+ }
+ .Button-walls{
+        width: 150px;
+        height: 100px;
+        background-color: #800000;
+        border: 6px solid black;
+        top: 10px;
+        z-index: 2;
+ }
+ .button-arcade:hover {
+ }
+ .button-arcade:active {
+      background-color: #800000;
+      padding-top: 3px;
+      transform: translateY(4px);
+ }
+ .joystick {
+        width: 160px;
+        height: 160px;
+        background-color: #6C3483;
+        border-radius: 50%;
+        position: relative;
+        z-index: +1;
+        right: -190px;
+        top: -20px;
+  border: 6px solid black;
+ }
+ .stick {
+        width: 30px;
+        height: 130px;
+        background-color: #ffc107;
+        position: relative;
+        border-radius: 30px;
+        border: 6px solid black;
+        left: 250px;
+        bottom: 40px;
+  }
+.header-text {
+        font-size: 5rem;
+        font-weight: bold;
+        color: #3aa32c;
+        text-transform: uppercase; 
+        letter-spacing: 0.2em;
+        text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.7); 
+        align-self: flex-start;
+        margin-top: 10px;
+  }
+.info-section{
+	height: 900px;
+	width: 900px;
+	font-size: 2rem;
+	border: 16px solid black;
+	border-radius: 8px;
+	justify-content: center;
+        align-items: center;
+	margin: 0 auto;
+	background-color: #333;
+	padding: 50px;
+}
+p{
+	color: solid black;
+	font-size: 2rem;
+}
