@@ -46,7 +46,7 @@ function animate() {
   if (x + vaWidth >= screenWidth || x < 0) {
     dirX *= -1;
 
-    dvd.style.backgroundColor = randomColour();
+    va.style.backgroundColor = randomColour();
   }
   x += dirX * speed;
   y += dirY * speed; 
