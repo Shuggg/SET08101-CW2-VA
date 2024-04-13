@@ -97,7 +97,7 @@ function collision(head, array) {
 }
 var Play = document.getElementById('Play');
 Play.addEventListener('click', handleClick1); 
-var 
+
 function playSoundScore() {
   // Create audio element
   var audio = new Audio('Score.m4a');
