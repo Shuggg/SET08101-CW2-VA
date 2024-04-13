@@ -30,7 +30,7 @@ const vaHeight = va.clientHeight;// size
 function randomColour() { 
   const colour1 = [...colour]//transferring colour array
   colour1.splice(turn,1) //change colour array
-  const colourIndex = Math.floor(Math.random() * currentPallete.length);// choose number in array
+  const colourIndex = Math.floor(Math.random() * colour1.length);// choose number in array
   turn = colourIndex<turn?colourIndex:colourIndex+1;// increment turn
   const colour2 = colour1[colorIndex];
   return colour2;
