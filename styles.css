@@ -1,12 +1,7 @@
- body {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    min-height: 100vh;
+body {
+	font-family: 'Roboto', sans-serif;
+ min-height: 100vh;
   background-image: url('backgroundVA.avif');
-  <!-- https://images.unsplash.com/photo-1534841090574-cba2d662b62e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -63,19 +58,6 @@
         z-index: 3;
         animation: rotateLensFlare 5s linear infinite;
         left: -900px;
-        margin: 0 auto;
- }
- .lens-flare2 {
-        position: absolute;
-        width: 3500px;
-        height: 3500px;
-        border-radius: 50%;
-        background: radial-gradient(white, transparent 30%);
-        opacity: 0.5;
-        pointer-events: none;
-        z-index: 3;
-        animation: rotateLensFlare 1s linear infinite;
-        left: -1400px;
         margin: 0 auto;
  }
  @keyframes rotateLensFlare {
