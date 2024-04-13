@@ -19,9 +19,6 @@ body {
         height: 700px;
         background-color: #333;
         border: 10px solid #555;
-        border-radius: 0px;
-        display: flex;
-        flex-direction: column;
  }
  .arcade-bottom {
         width: 1100px;
@@ -29,10 +26,6 @@ body {
         background-color: #333;
         border: 10px solid #555;
         border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: 0 auto;
 }
   
 .black-box {
@@ -40,12 +33,9 @@ body {
         height: 600px;
         background-color: #000;
         position: relative;
-        overflow: hidden;
         border-radius: 10px;
         margin: 0 auto;
         top: 40px;
-        animation: vhs-noise 0.5s infinite;
-        flex-direction: column;
 }
 .lens-flare {
         position: absolute;
