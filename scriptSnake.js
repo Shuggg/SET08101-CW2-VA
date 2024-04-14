@@ -104,18 +104,11 @@ function playSoundScore() {
 }
 let isMuted = false;
 function toggleMute() {
-    // Toggle the mute state
-    isMuted = !isMuted;
-    
-    // Check if muted or not and update button text accordingly
-    if (isMuted) {
-        // Mute audio
+    isMuted = !isMuted; // Toggle the mute
+    if (isMuted) { // Check if muted
         audio.volume = 0; // Set volume to 0 to mute
-        muteButton.textContent = 'Unmute';
     } else {
-        // Unmute audio
         audio.volume = 1; // Set volume to 1 for full volume
-        muteButton.textContent = 'Mute';
     }
 }
 
