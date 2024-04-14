@@ -35,6 +35,7 @@ body {
         background-color: #000;
         position: relative;
 	overflow: hidden;
+	align-items: center;
         border-radius: 10px;
         margin: 0 auto;
         top: 40px;
