@@ -96,13 +96,11 @@ function collision(head, array) {
 }
 }
 var Play = document.getElementById('Play');
-Play.addEventListener('click', handleClick1); 
+Play.addEventListener('click', handleClick1);
 
+var audio = new Audio('Score.m4a');
 function playSoundScore() {
-  // Create audio element
-  var audio = new Audio('Score.m4a');
-  // Play the audio
-  audio.play();
+  audio.play();  // Play the audio
 }
 let isMuted = false;
 function toggleMute() {
