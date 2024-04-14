@@ -134,11 +134,11 @@ body {
         margin-top: 10px;
   }
 .info-section{
-	height: 900px;
+	height: 1000px;
 	width: 900px;
 	font-size: 2rem;
 	border: 16px solid black;
-	border-radius: 8px;
+	border-radius: 14px;
 	justify-content: center;
         align-items: center;
 	margin: 0 auto;
