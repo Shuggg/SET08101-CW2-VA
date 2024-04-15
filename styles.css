@@ -170,4 +170,6 @@ body {
 .game-entry desc {
   	text-align: left;
 }
-
+a {
+	text-align: center;	
+}
