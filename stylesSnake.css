@@ -149,3 +149,6 @@ p{
 	color: solid black;
 	font-size: 2rem;
 }
+a{
+	line-height: 50px;
+}
