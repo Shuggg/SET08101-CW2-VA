@@ -58,8 +58,8 @@ body {
 }
 .content {
 	display: flex;
-	flex-direction: row; /* Align joystick and buttons in a row */
-    	justify-content: space-between; /* Distribute space between joystick and buttons */
+	flex-direction: row; // Align joystick and buttons in a row
+    	justify-content: space-between; // Distribute space between joystick and buttons 
  }
  .page-container{
  }
